@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "Pull static assets from node modules during your build step.",
   "main": "index.js",
+  "repository": "https://github.com/r24y/gulp-resolve.git",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "cd test && npm install",
     "postinstall": "node_modules/.bin/babel src/main.js > index.js"
   },
   "author": "Ryan Muller <ryan@muller.io>",
