@@ -1,6 +1,6 @@
 {
   "name": "gulp-resolve",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Pull static assets from node modules during your build step.",
   "main": "index.js",
   "repository": "https://github.com/r24y/gulp-resolve.git",
