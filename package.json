@@ -6,17 +6,20 @@
   "repository": "https://github.com/r24y/gulp-resolve.git",
   "scripts": {
     "test": "cd test && npm install",
-    "postinstall": "node_modules/.bin/babel src/main.js > index.js"
+    "prepublish": "babel src/main.js > index.js"
   },
-  "author": "Ryan Muller <ryan@muller.io>",
+  "author": "Ryan Muller <r24y@noreply.users.github.com>",
   "license": "ISC",
   "dependencies": {
-    "babel": "^5.6.14",
     "gulp": "^3.9.0",
     "gulp-concat": "^2.6.0",
     "lodash": "^3.9.3",
     "resolve": "^1.1.6",
     "thunkify-wrap": "^1.0.4",
     "vinyl-fs": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.5.2"
   }
 }

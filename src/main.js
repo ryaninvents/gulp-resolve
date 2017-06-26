@@ -5,11 +5,8 @@ import resolve from 'resolve';
 
 function srcInternal({files, basedir=process.cwd(), cb}) {
   try {
-    let fnms = [];
-    for (const moduleName of files) {
-      const path = resolve.sync(moduleName, {basedir});
-      fnms.push(path);
-    }
+    const fnms = files.map((moduleName) =>
+      resolve.sync(moduleName, {basedir}));
 
     if (cb) cb(null, vfs.src(fnms));
     else return vfs.src(fnms);
